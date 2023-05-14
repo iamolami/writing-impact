@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,  Route } from "react-router-dom";
 import navigations from "./components/BreadCrumb/navigation";
 import CustomRoutes from "./components/miscellaneous/CustomRoutes";
 
