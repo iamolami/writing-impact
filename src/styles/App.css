@@ -232,7 +232,7 @@
   border-radius: 48px;
   color: #fff;
   display: inline-flex;
-  font-size: 1.8rem;
+  font-size: inherit;
   font-weight: 600;
   height: 44px;
   justify-content: center;
@@ -299,13 +299,11 @@
   text-transform: uppercase;
 }
 .thmtitle h3 {
-  font-size: 3.2rem;
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
 }
 .thmtitle p {
-  font-size: 14px;
   line-height: 25px;
   margin-top: 20px;
 }
@@ -682,7 +680,7 @@ body {
   background: #fff;
   color: #15171a;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -804,8 +802,19 @@ blockquote cite a {
 a {
   color: #15171a;
   text-decoration: none;
+  font-size: 1.8rem;
 }
 
+p {
+  color: #15171a;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1.9rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -820,7 +829,7 @@ h6 {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 7rem;
   font-weight: 700;
   letter-spacing: -0.015em;
   margin: 0 0 0.5em;
@@ -850,7 +859,7 @@ h3 {
 
 @media (max-width: 600px) {
   h3 {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 h4 {
@@ -928,8 +937,7 @@ h6 {
 .whyUs .thmtitle {
   text-align: left;
 }
-.whyUs .thmtitle h3 {
-  font-size: 3.6rem;
+.whyUs .thmtitle h2 {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -969,11 +977,9 @@ h6 {
   transition: all 300ms ease-in-out;
 }
 .whyUs__grid-box p {
-  font-size: 13.5px;
   line-height: 20px;
 }
 .whyUs__grid-box h3 {
-  font-size: 20px;
   line-height: 1.2;
 }
 
@@ -1024,9 +1030,6 @@ h6 {
 }
 .users .thmtitle {
   text-align: left;
-}
-.users .thmtitle h3 {
-  font-size: 30px;
 }
 .users__grid {
   display: grid;
@@ -1090,11 +1093,7 @@ h6 {
   transition: all 300ms ease-in-out;
 }
 .users__grid-box p {
-  font-size: 13.5px;
   line-height: 20px;
-}
-.users__grid-box h3 {
-  font-size: 20px;
 }
 .users__btn {
   background-color: rgba(2, 222, 194, 0.45);
@@ -1255,19 +1254,12 @@ h6 {
   color: #fff;
 }
 .exp__box h3 {
-  font-size: 30px;
   letter-spacing: -0.03em;
   line-height: 1em;
   margin-top: -10px;
 }
-@media (max-width: 767px) {
-  .exp__box h3 {
-    font-size: 2.8rem;
-  }
-}
 .exp__box p {
   font-weight: 600;
-  font-size: 14px;
   color: #7e8aa7;
   letter-spacing: -0.03em;
   line-height: 1em;
@@ -1325,7 +1317,6 @@ h6 {
   margin-left: 20px;
 }
 .testimony__top-content h3 {
-  font-size: 16px;
   color: #333 !important;
   margin-top: -6px;
 }
@@ -1339,7 +1330,6 @@ h6 {
   margin-top: 30px;
 }
 .testimony__text p {
-  font-size: 13.5px;
   line-height: 25px;
 }
 @media (max-width: 767px) {
@@ -1405,7 +1395,6 @@ h6 {
   height: 100%;
 }
 .blog .col-md-12 h3 {
-  font-size: 3.6rem;
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
@@ -1467,7 +1456,6 @@ h6 {
   margin: 0 0 10px;
 }
 .blog__content-main {
-  font-size: 2.6rem;
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
@@ -1475,7 +1463,6 @@ h6 {
 .blog__content-text {
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  font-size: 13.5px;
   line-height: 1.5;
   margin-top: 12px;
   max-width: 720px;
@@ -1543,7 +1530,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .contact__text h3 {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 .contact .thm-btn {
@@ -1590,7 +1577,6 @@ h6 {
   }
 }
 .footer .col-md-5 p {
-  font-size: 13px;
   line-height: 25px;
   margin: 25px 0 0;
 }
@@ -1763,7 +1749,6 @@ h6 {
   overflow-y: hidden;
   display: -webkit-box;
   word-break: break-word;
-  font-size: 2.3rem;
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
@@ -1771,7 +1756,6 @@ h6 {
 .courses__content-text {
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  font-size: 13.5px;
   line-height: 1.5;
   margin-top: 12px;
   max-width: 720px;
@@ -2409,14 +2393,11 @@ h6 {
   }
 }
 .banner__content h1 {
-  font-size: 55px;
   line-height: 75px;
   letter-spacing: -0.03em;
-  font-weight: 800;
 }
 @media (max-width: 767px) {
   .banner__content h1 {
-    font-size: 40px;
     line-height: normal;
   }
 }
@@ -2433,13 +2414,11 @@ h6 {
   }
 }
 .banner__text {
-  font-size: 16px;
   line-height: 33px;
   margin: 30px 0 40px;
 }
 @media (max-width: 767px) {
   .banner__text {
-    font-size: 16px;
     line-height: normal;
   }
 }
@@ -2448,14 +2427,12 @@ h6 {
   text-align: center;
 }
 .banner__sect h2 {
-  font-size: 3.2rem;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .banner__sect h2 {
-    font-size: 3.2rem;
     line-height: normal;
   }
 }
@@ -2522,12 +2499,11 @@ h6 {
   border-bottom: 1.5px solid #e2e4e8;
 }
 .menu__menuList .material-symbols-outlined {
-  font-size: 16px;
+  font-size: inherit;
   margin-left: 5px;
   cursor: pointer;
 }
 .menu__menuLink {
-  font-size: 1.7rem;
   font-weight: 600;
   color: #15171a;
   transition: all 0.4s ease-in-out;
@@ -2564,7 +2540,6 @@ h6 {
   margin-top: 50px;
 }
 .menu__menuSignIn {
-  font-size: 1.3rem;
   font-weight: 400;
   text-transform: none;
   text-decoration: none;
@@ -2576,7 +2551,7 @@ h6 {
   border-radius: 48px;
   color: #fff;
   display: inline-flex;
-  font-size: 1.7rem;
+  font-size: inherit;
   font-weight: 600;
   height: 44px;
   justify-content: center;
@@ -2638,14 +2613,12 @@ h6 {
   text-transform: uppercase;
 }
 .service__title h3 {
-  font-size: 3.6rem;
   font-weight: 800;
   line-height: 1.2;
   margin: 0;
   margin-bottom: 10px;
 }
 .service__title p {
-  font-size: 15px;
   line-height: 25px;
 }
 .service__flex {
@@ -2704,7 +2677,6 @@ h6 {
   font-weight: 700;
 }
 .service__box p {
-  font-size: 13.5px;
   line-height: 25px;
   margin: 20px 0 0;
 }
@@ -2965,14 +2937,11 @@ h6 {
   }
 }
 .bannerProduct__content h1 {
-  font-size: 55px;
   line-height: 75px;
   letter-spacing: -0.03em;
-  font-weight: 800;
 }
 @media (max-width: 767px) {
   .bannerProduct__content h1 {
-    font-size: 40px;
     line-height: normal;
   }
 }
@@ -2980,13 +2949,11 @@ h6 {
   color: #02DEC2;
 }
 .bannerProduct__text {
-  font-size: 16px;
   line-height: 33px;
   margin: 30px 0 40px;
 }
 @media (max-width: 767px) {
   .bannerProduct__text {
-    font-size: 16px;
     line-height: normal;
   }
 }
@@ -3050,7 +3017,6 @@ h6 {
   font-weight: 700;
 }
 .products__box p {
-  font-size: 13.5px;
   line-height: 25px;
   margin: 20px 0 0;
 }
@@ -3110,7 +3076,6 @@ h6 {
 }
 .products__contentBox-title h3 {
   margin: 0;
-  font-size: 32px;
   line-height: normal;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -3148,11 +3113,9 @@ h6 {
 .products__flexBox-content h3 {
   letter-spacing: -0.03em;
   margin: 0 0 13px;
-  font-size: 16px;
 }
 .products__flexBox-content p {
   margin: 0;
-  font-size: 14px;
   line-height: normal;
   color: #7e8aa7;
 }
@@ -3238,14 +3201,11 @@ h6 {
   }
 }
 .bannerService__content h1 {
-  font-size: 55px;
   line-height: 75px;
   letter-spacing: -0.03em;
-  font-weight: 800;
 }
 @media (max-width: 767px) {
   .bannerService__content h1 {
-    font-size: 40px;
     line-height: normal;
   }
 }
@@ -3253,13 +3213,11 @@ h6 {
   color: #02DEC2;
 }
 .bannerService__text {
-  font-size: 13.5px;
   line-height: 33px;
   margin: 30px 0 40px;
 }
 @media (max-width: 767px) {
   .bannerService__text {
-    font-size: 13.5px;
     line-height: normal;
   }
 }
@@ -3389,7 +3347,6 @@ h6 {
 }
 .services__contentBox-title h3 {
   margin: 0;
-  font-size: 32px;
   line-height: normal;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -3427,11 +3384,9 @@ h6 {
 .services__flexBox-content h3 {
   letter-spacing: -0.03em;
   margin: 0 0 13px;
-  font-size: 15px;
 }
 .services__flexBox-content p {
   margin: 0;
-  font-size: 13px;
   line-height: normal;
   color: #7e8aa7;
 }
@@ -3484,7 +3439,6 @@ h6 {
   letter-spacing: -0.03em;
   line-height: 1em;
   margin: 0 0 10px;
-  font-size: 17px;
 }
 
 .bg-white {
@@ -3567,13 +3521,11 @@ h6 {
 }
 .text__col-lg-4-content h3 {
   margin: 0;
-  font-size: 18px;
   color: #15171a;
   letter-spacing: -0.03em;
   line-height: 1em;
 }
 .text__col-lg-4-content p {
-  font-size: 13px;
   font-weight: 400;
   color: #151719;
   line-height: normal;
@@ -3636,14 +3588,12 @@ h6 {
 }
 .text__whyUs-main h3 {
   margin: 0;
-  font-size: 3.2rem;
   line-height: normal;
   font-weight: 800;
   letter-spacing: -0.03em;
 }
 .text__whyUs-text {
   margin: 0;
-  font-size: 13px;
   line-height: normal;
   color: #5f5f5f;
 }

@@ -524,13 +524,10 @@
         }
 
         h1 {
-            font-size: 55px;
             line-height: 75px;
             letter-spacing: -0.03em;
-            font-weight: 800;
-
+        
             @include for-size(phone-only) {
-                font-size: 40px;
                 line-height: normal;
             }
 
@@ -549,11 +546,9 @@
     }
 
     &__text {
-        font-size: 16px;
         line-height: 33px;
         margin: 30px 0 40px;
         @include for-size(phone-only) {
-            font-size: 16px;
             line-height: normal;
         }
     }
@@ -563,12 +558,10 @@
         text-align: center;
 
         h2 {
-            font-size: 3.2rem;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 30px;
             @include for-size(phone-only) {
-                font-size: 3.2rem;
                 line-height: normal;
             }
         }
@@ -639,13 +632,12 @@
         }
 
         .material-symbols-outlined {
-            font-size: 16px;
+            font-size: inherit;
             margin-left: 5px;
             cursor: pointer;
         }
     }
     &__menuLink {
-        font-size: 1.7rem;
         font-weight: 600;
         color: $color-darkgrey;
         transition: all .4s ease-in-out;
@@ -686,7 +678,6 @@
         margin-top: 50px;
     }
     &__menuSignIn {
-        font-size: 1.3rem;
         font-weight: 400;
         text-transform: none;
         text-decoration: none;
@@ -698,7 +689,7 @@
         border-radius: 48px;
         color: #fff;
         display: inline-flex;
-        font-size: 1.7rem;
+        font-size: inherit; 
         font-weight: 600;
         height: 44px;
         justify-content: center;

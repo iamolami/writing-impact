@@ -38,8 +38,7 @@
     .thmtitle {
         text-align: left;
 
-        h3 {
-            font-size: 3.6rem;
+        h2 {
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 10px;
@@ -83,12 +82,10 @@
             }
 
             p {
-                font-size: 13.5px;
                 line-height: 20px;
             }
 
             h3 {
-                font-size: 20px;
                 line-height: 1.2;
             }
         }
@@ -144,10 +141,6 @@
 
     .thmtitle {
         text-align: left;
-
-        h3 {
-            font-size: 30px;
-        }
     }
 
     &__grid {
@@ -213,12 +206,7 @@
             }
 
             p {
-                font-size: 13.5px;
                 line-height: 20px;
-            }
-
-            h3 {
-                font-size: 20px;
             }
         }
     }
@@ -400,18 +388,13 @@
         }
 
         h3 {
-            font-size: 30px;
             letter-spacing: -0.03em;
             line-height: 1em;
             margin-top: -10px;
-            @include for-size(phone-only) {
-                font-size: 2.8rem;
-            }
         }
 
         p {
             font-weight: 600;
-            font-size: 14px;
             color: #7e8aa7;
             letter-spacing: -0.03em;
             line-height: 1em;
@@ -474,7 +457,6 @@
             margin-left: 20px;
              
             h3 {
-                font-size: 16px;
                 color: #333 !important;
                 margin-top: -6px;
             }
@@ -492,7 +474,6 @@
         margin-top: 30px;
 
         p {
-            font-size: 13.5px;
             line-height: 25px;
         }
     }
@@ -563,7 +544,6 @@
         height: 100%;
 
         h3 {
-            font-size: 3.6rem;
             font-weight: 800;
             line-height: 1.2;
             margin: 0;
@@ -632,7 +612,6 @@
             margin: 0 0 10px;
         }
         &-main {
-            font-size: 2.6rem;
             font-weight: 800;
             line-height: 1.2;
             margin: 0;
@@ -640,7 +619,6 @@
         &-text {
             -webkit-box-orient: vertical;
             display: -webkit-box;
-            font-size: 13.5px;
             line-height: 1.5;
             margin-top: 12px;
             max-width: 720px;
@@ -712,7 +690,7 @@
             margin: 0 0 5px;
 
             @include for-size(phone-only) {
-                font-size: 30px;
+                font-size: 15px;
             }
         }
     }
@@ -764,7 +742,6 @@
         }
 
         p {
-            font-size: 13px;
             line-height: 25px;
             margin: 25px 0 0;
         }
@@ -953,7 +930,6 @@
             overflow-y: hidden;
             display: -webkit-box;
             word-break: break-word;
-            font-size: 2.3rem;
             font-weight: 800;
             line-height: 1.2;
             margin: 0;
@@ -961,7 +937,6 @@
         &-text {
             -webkit-box-orient: vertical;
             display: -webkit-box;
-            font-size: 13.5px;
             line-height: 1.5;
             margin-top: 12px;
             max-width: 720px;

@@ -29,7 +29,7 @@ const DigitalPlatform = () => {
                                     </div>
                                     <div className='products__flexBox-content'>
                                         <h3>Order Online</h3>
-                                        <p>Choose from a variety of projects and get going in less than 5 minutes </p>
+                                        <small>Choose from a variety of projects and get going in less than 5 minutes </small>
                                     </div>
                                 </div>
                                 <div className='products__flexBox-box'>

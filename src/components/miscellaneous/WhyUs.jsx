@@ -42,9 +42,9 @@ const DisplayWhyUs = () => {
                     <div className='col-md-3'>
                         <div className='thmtitle'>
                             <h4>Why Choose Us</h4>
-                            <h3>
+                            <h2>
                                 One-stop-solution for all your digital content requirements
-                            </h3>
+                            </h2>
                             <p>
                                 Be it Text, Graphics, Translations, or any other needs. We have you covered.
                             </p>
