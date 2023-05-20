@@ -24,57 +24,16 @@ const GraphicsContent = () => {
               <div className="services__contentBox-title">
                 <h3>Graphics Content</h3>
               </div>
-              <p style={{ fontWeight: "600", fontSize: "16px" }}>
+              <p style={{ fontWeight: "600", fontSize: "15px" }}>
                 “A picture is worth a thousand words”
                 Cliche = yes! True = yes!!
                 Pictures tend to simplify the verbose nature of the textual content.
               </p>
-              <p style={{ marginTop: "20px", fontSize: "13px" }}>
+              <p style={{ marginTop: "20px", fontSize: "14px" }}>
                 At Writing Impact, we believe that the graphical representation is one of the leading 
                 means of communication. Users comprehend information in various forms - text, graphical, images etc,. 
                 and graphics are a great way to form a visual memory and ease of understanding.
               </p>
-              <div className="services__flexBox">
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Order Online</h3>
-                    <p>
-                      Choose from a variety of projects and get going in less
-                      than 5 minutes{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Dashboard View</h3>
-                    <p>Track your order in real-time and provide feedback</p>
-                  </div>
-                </div>
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Approval Management</h3>
-                    <p>Provide feedback and keep control 100 percent</p>
-                  </div>
-                </div>
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Single Invoice</h3>
-                    <p>Multiple projects can be managed and paid together</p>
-                  </div>
-                </div>
-              </div>
               <a href="/" className="thm-btn" style={{ marginTop: "30px" }}>
                 Learn More
               </a>

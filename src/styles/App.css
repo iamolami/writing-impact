@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .button {
   width: 100px;
   height: 30px;
@@ -298,14 +298,9 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.thmtitle h3 {
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 0;
-}
 .thmtitle p {
   line-height: 25px;
-  margin-top: 20px;
+  font-size: 15px;
 }
 
 .main_breadcrumb {
@@ -502,6 +497,8 @@ html {
 
 a {
   background-color: transparent;
+  color: #15171a;
+  text-decoration: none;
 }
 
 a:active,
@@ -679,12 +676,9 @@ body {
   -moz-font-feature-settings: "liga" on;
   background: #fff;
   color: #15171a;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.6em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 hr {
@@ -799,20 +793,15 @@ blockquote cite a {
   font-weight: 400;
 }
 
-a {
-  color: #15171a;
-  text-decoration: none;
-  font-size: 1.8rem;
-}
-
 p {
   color: #15171a;
-  font-size: 2rem;
+  font-size: 18px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   p {
-    font-size: 1.9rem;
+    font-size: 16px;
+    line-height: normal;
   }
 }
 h1,
@@ -829,37 +818,42 @@ h6 {
 }
 
 h1 {
-  font-size: 7rem;
-  font-weight: 700;
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   letter-spacing: -0.015em;
   margin: 0 0 0.5em;
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 35px;
   }
 }
 h2 {
-  font-size: 2.8rem;
+  font-size: 27px;
   font-weight: 700;
   margin: 1.5em 0 0.5em;
 }
 
 @media (max-width: 600px) {
   h2 {
-    font-size: 2.3rem;
+    font-size: 18px;
   }
 }
 h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin: 1.5em 0 0.5em;
+  margin: 0;
+  font-size: 32px;
+  line-height: normal;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #1f2d3d;
 }
 
 @media (max-width: 600px) {
   h3 {
-    font-size: 2.2rem;
+    font-size: 30px !important;
   }
 }
 h4 {
@@ -966,7 +960,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .whyUs__grid-box {
-    padding: 10px 20px;
+    padding: 15px 0px 15px 0px;
   }
 }
 .whyUs__grid-box:hover .material-symbols-outlined {
@@ -974,13 +968,19 @@ h6 {
 }
 .whyUs__grid-box .material-symbols-outlined {
   font-size: 40px;
+  color: #1f2d3d;
   transition: all 300ms ease-in-out;
 }
 .whyUs__grid-box p {
-  line-height: 20px;
+  line-height: normal;
+  font-size: 15px;
 }
 .whyUs__grid-box h3 {
-  line-height: 1.2;
+  color: #15171a;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px !important;
+  line-height: 30px;
+  margin: 25px 0 10px;
 }
 
 .users {
@@ -996,7 +996,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .users {
-    height: 290vh;
+    height: 100%;
   }
 }
 .users .row {
@@ -1088,12 +1088,23 @@ h6 {
 .users__grid-box:hover .users__btn i {
   color: #02DEC2;
 }
+.users__grid-box h3 {
+  color: #15171a;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px !important;
+  line-height: 30px;
+  margin: 25px 0 10px;
+}
 .users__grid-box .material-symbols-outlined {
-  font-size: 50px;
+  font-size: 55px;
   transition: all 300ms ease-in-out;
 }
 .users__grid-box p {
   line-height: 20px;
+  color: #7c7c7c;
+  transition: 0.5s;
+  margin: 0 0 20px;
+  font-size: 15px;
 }
 .users__btn {
   background-color: rgba(2, 222, 194, 0.45);
@@ -1111,96 +1122,6 @@ h6 {
 }
 .users__btn i {
   font-size: 18px;
-}
-
-.process {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgba(218, 234, 244, 0.1882352941);
-  border: 2px solid #e2e4e8;
-  border-width: 2px 0;
-}
-.process .row {
-  margin-top: 50px;
-}
-@media (max-width: 767px) {
-  .process .row {
-    flex-direction: column;
-  }
-}
-.process .col-md-6 {
-  flex-basis: 26%;
-  position: relative;
-}
-@media (max-width: 767px) {
-  .process .col-md-6:not(:first-child) {
-    margin-top: 20px;
-  }
-}
-.process .col-md-6:nth-child(2) {
-  margin-top: 95px;
-}
-@media (max-width: 767px) {
-  .process .col-md-6:nth-child(2) {
-    margin-top: 20px;
-  }
-}
-.process .col-md-6:nth-child(2)::after {
-  top: 29%;
-  left: 85%;
-  transform: rotate(-45deg);
-}
-.process .col-md-6:not(:last-child)::after {
-  content: "";
-  width: 117px;
-  height: 54px;
-  background-image: url("https://www.textmercato.com/_next/static/media/home-4-arrow-1.2a051bbb.png");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-@media (max-width: 767px) {
-  .process .col-md-6:not(:last-child)::after {
-    display: none;
-  }
-}
-.process .col-md-6:first-child::after {
-  top: 33%;
-  left: 85%;
-}
-.process__box {
-  text-align: center;
-}
-.process__box .material-symbols-outlined {
-  width: 170px;
-  height: 170px;
-  border: 3px dashed #113dbc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 50px;
-  color: #113dbc;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.5s;
-}
-.process__box:hover .material-symbols-outlined {
-  background-color: #02DEC2;
-  color: #fff;
-  border: none;
-}
-.process__box h3 {
-  font-size: 2.8rem;
-}
-.process__box p {
-  font-size: 13.5px;
-  line-height: 20px;
-  text-align: justify;
-}
-.process__box p span {
-  font-weight: 700;
 }
 
 .exp {
@@ -1256,13 +1177,16 @@ h6 {
 .exp__box h3 {
   letter-spacing: -0.03em;
   line-height: 1em;
-  margin-top: -10px;
+  margin: 0 0 10px;
+  font-family: "Raleway", sans-serif;
 }
 .exp__box p {
   font-weight: 600;
+  font-size: 14px;
   color: #7e8aa7;
   letter-spacing: -0.03em;
   line-height: 1em;
+  margin: 0;
 }
 
 .testimony {
@@ -1318,19 +1242,24 @@ h6 {
 }
 .testimony__top-content h3 {
   color: #333 !important;
-  margin-top: -6px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px !important;
 }
 .testimony__top-content span {
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #333 !important;
   letter-spacing: 0.2em;
 }
 .testimony__text {
   margin-top: 30px;
 }
 .testimony__text p {
-  line-height: 25px;
+  line-height: normal;
+  font-size: 15px !important;
 }
 @media (max-width: 767px) {
   .testimony__owner {
@@ -1394,11 +1323,6 @@ h6 {
   flex-basis: 50%;
   height: 100%;
 }
-.blog .col-md-12 h3 {
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 0;
-}
 .blog .col-md-12:first-child {
   text-align: left;
 }
@@ -1456,19 +1380,22 @@ h6 {
   margin: 0 0 10px;
 }
 .blog__content-main {
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 0;
+  color: #15171a;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px !important;
+  letter-spacing: -0.03em;
+  line-height: normal;
+  margin: 0 0 25px;
 }
 .blog__content-text {
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  line-height: 1.5;
-  margin-top: 12px;
+  line-height: normal;
   max-width: 720px;
   overflow-y: hidden;
   word-break: break-word;
   -webkit-line-clamp: 3;
+  font-size: 15px;
 }
 .blog__content-footer {
   align-items: center;
@@ -1527,10 +1454,11 @@ h6 {
   font-size: 50px;
   letter-spacing: -0.03em;
   margin: 0 0 5px;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 767px) {
   .contact__text h3 {
-    font-size: 15px;
+    font-size: 35px;
   }
 }
 .contact .thm-btn {
@@ -1578,6 +1506,7 @@ h6 {
 }
 .footer .col-md-5 p {
   line-height: 25px;
+  font-size: 15px;
   margin: 25px 0 0;
 }
 .footer .col-md-8 {
@@ -1630,7 +1559,8 @@ h6 {
   padding-left: 0;
 }
 .footer__widget-links h3 {
-  font-size: 13px;
+  font-size: 15px !important;
+  font-family: "Raleway", sans-serif;
   letter-spacing: -0.03em;
   color: #1f2d3d;
   padding-bottom: 20px;
@@ -1646,7 +1576,7 @@ h6 {
 .footer__widget-links li {
   display: block;
   text-align: left;
-  margin-bottom: 10px;
+  margin-top: 0px !important;
   padding-left: 20px;
   position: relative;
 }
@@ -2061,7 +1991,7 @@ h6 {
 .header__topBox-nav li .navLinks {
   position: relative;
   color: inherit;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   line-height: 2.7;
@@ -2403,6 +2333,7 @@ h6 {
 }
 .banner__content h1 span {
   color: #02DEC2;
+  font-weight: 600;
 }
 .banner__content img {
   width: 95%;
@@ -2604,6 +2535,7 @@ h6 {
 }
 .service__title {
   text-align: center;
+  height: 100%;
 }
 .service__title h4 {
   color: #02DEC2;
@@ -2613,13 +2545,11 @@ h6 {
   text-transform: uppercase;
 }
 .service__title h3 {
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 0;
   margin-bottom: 10px;
 }
 .service__title p {
   line-height: 25px;
+  font-size: 15px;
 }
 .service__flex {
   display: grid;
@@ -2675,10 +2605,14 @@ h6 {
 }
 .service__box h3 {
   font-weight: 700;
+  font-size: 20px !important;
+  margin: 30px 0 0;
 }
 .service__box p {
+  color: #5f5f5f;
+  font-size: 15px;
   line-height: 25px;
-  margin: 20px 0 0;
+  margin: 15px 0 0;
 }
 
 .box {
@@ -2868,11 +2802,11 @@ h6 {
 }
 
 .bannerProduct {
-  margin-top: 140px;
+  margin-top: 100px;
 }
 @media (max-width: 767px) {
   .bannerProduct {
-    margin-top: 100px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -2947,6 +2881,7 @@ h6 {
 }
 .bannerProduct__content h1 span {
   color: #02DEC2;
+  font-weight: 600;
 }
 .bannerProduct__text {
   line-height: 33px;
@@ -2994,7 +2929,7 @@ h6 {
 }
 .products__box i,
 .products__box .material-symbols-outlined {
-  font-size: 30px;
+  font-size: 24px;
   color: #02DEC2;
   width: 60px;
   height: 60px;
@@ -3014,11 +2949,15 @@ h6 {
   color: #fff;
 }
 .products__box h3 {
-  font-weight: 700;
+  font-size: 20px !important;
+  font-family: "Raleway", sans-serif;
+  margin: 30px 0 0;
 }
 .products__box p {
+  color: #5f5f5f;
+  font-size: 15px;
   line-height: 25px;
-  margin: 20px 0 0;
+  margin: 15px 0 0;
 }
 .products__wrapper {
   background-color: #f8f9fe;
@@ -3074,6 +3013,11 @@ h6 {
   margin-bottom: 25px;
   text-align: left !important;
 }
+@media (max-width: 767px) {
+  .products__contentBox-title {
+    text-align: start !important;
+  }
+}
 .products__contentBox-title h3 {
   margin: 0;
   line-height: normal;
@@ -3093,19 +3037,24 @@ h6 {
   align-items: flex-start;
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .products__flexBox-box {
+    padding-right: 0px;
+  }
+}
 .products__flexBox-icon .material-symbols-outlined {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   font-size: 14px;
   border-width: 1px;
-  border: 2px solid #000;
+  border: 1px solid #1f2d3d;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 20px;
-  color: #000;
+  color: #1f2d3d;
   border-radius: 50%;
   margin-right: 20px;
   transition: all 0.5s ease;
@@ -3113,9 +3062,11 @@ h6 {
 .products__flexBox-content h3 {
   letter-spacing: -0.03em;
   margin: 0 0 13px;
+  font-size: 15px !important;
 }
 .products__flexBox-content p {
   margin: 0;
+  font-size: 14px;
   line-height: normal;
   color: #7e8aa7;
 }
@@ -3211,10 +3162,12 @@ h6 {
 }
 .bannerService__content h1 span {
   color: #02DEC2;
+  font-weight: 600;
 }
 .bannerService__text {
   line-height: 33px;
   margin: 30px 0 40px;
+  font-size: 15px;
 }
 @media (max-width: 767px) {
   .bannerService__text {
@@ -3289,6 +3242,7 @@ h6 {
   font-size: 13.5px;
   line-height: 25px;
   margin: 20px 0 0;
+  color: #5f5f5f;
 }
 .services__wrapper {
   background-color: #f8f9fe;
@@ -3351,45 +3305,6 @@ h6 {
   font-weight: 700;
   letter-spacing: -0.03em;
 }
-.services__flexBox {
-  padding-right: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.services__flexBox-box {
-  width: 48%;
-  padding-right: 30px;
-  display: flex;
-  align-items: flex-start;
-  margin-top: 30px;
-}
-.services__flexBox-icon .material-symbols-outlined {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 14px;
-  border-width: 1px;
-  border: 2px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  color: #000;
-  border-radius: 50%;
-  margin-right: 20px;
-  transition: all 0.5s ease;
-}
-.services__flexBox-content h3 {
-  letter-spacing: -0.03em;
-  margin: 0 0 13px;
-}
-.services__flexBox-content p {
-  margin: 0;
-  line-height: normal;
-  color: #7e8aa7;
-}
 .services__listing {
   padding-right: 70px;
 }
@@ -3415,8 +3330,8 @@ h6 {
 }
 @media (max-width: 767px) {
   .services__listing-col-md-4 {
-    flex: 0 0 49.333333%;
-    max-width: 49.333333%;
+    flex: 0 0 100%;
+    max-width: 100%;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -3439,6 +3354,7 @@ h6 {
   letter-spacing: -0.03em;
   line-height: 1em;
   margin: 0 0 10px;
+  font-size: 18px !important;
 }
 
 .bg-white {
@@ -3521,13 +3437,16 @@ h6 {
 }
 .text__col-lg-4-content h3 {
   margin: 0;
-  color: #15171a;
+  font-size: 24px !important;
+  font-family: "Raleway", sans-serif;
+  color: #1f2d3d;
   letter-spacing: -0.03em;
   line-height: 1em;
 }
 .text__col-lg-4-content p {
+  font-size: 14px;
   font-weight: 400;
-  color: #151719;
+  color: #1f2d3d;
   line-height: normal;
   margin: 15px 0 0;
   padding: 0 20px;
@@ -3596,6 +3515,7 @@ h6 {
   margin: 0;
   line-height: normal;
   color: #5f5f5f;
+  font-size: 14px;
 }
 .text__whyUs-columns {
   padding-right: 0;
@@ -3610,18 +3530,18 @@ h6 {
   margin-top: 20px;
 }
 .text__whyUs-icon .material-symbols-outlined {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   font-size: 14px;
   border-width: 1px;
-  border: 2px solid #000;
+  border: 1px solid #1f2d3d;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 20px;
-  color: #000;
+  color: #1f2d3d;
   border-radius: 50%;
   margin-right: 20px;
   transition: all 0.5s ease;
@@ -3632,7 +3552,7 @@ h6 {
 .text__whyUs-contentBox h3 {
   letter-spacing: -0.03em;
   margin: 0 0 13px;
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .FAQs {

@@ -1,7 +1,7 @@
 .bannerProduct {
-    margin-top: 140px;
+    margin-top: 100px;
     @include for-size(phone-only) {
-        margin-top: 100px;
+        margin-top: 30px;
     }
     &__row {
         @include for-size(phone-only) {
@@ -72,6 +72,7 @@
 
             span {
                 color: $primary;
+                font-weight: $weight-semi;
             }
         }
     }
@@ -124,7 +125,7 @@
 
         i,
         .material-symbols-outlined {
-            font-size: 30px;
+            font-size: 24px;
             color: $primary;
             width: 60px;
             height: 60px;
@@ -148,12 +149,16 @@
         }
 
         h3 {
-            font-weight: 700;
+            font-size: 20px !important;
+            font-family: $heading-font;
+            margin: 30px 0 0;
         }
 
         p {
-            line-height: 25px;
-            margin: 20px 0 0;
+            color: #5f5f5f;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 15px 0 0;
         }
     }
 
@@ -211,6 +216,10 @@
             margin-bottom: 25px;
             text-align: left !important;
 
+            @include for-size(phone-only) {
+                text-align: start !important;
+            }
+
             h3 {
                 margin: 0;
                 line-height: normal;
@@ -232,22 +241,26 @@
             display: flex;
             align-items: flex-start;
             margin-top: 30px;
+
+            @include for-size(phone-only) {
+                padding-right: 0px;
+            }
         }
 
         &-icon {
             .material-symbols-outlined {
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
                 font-size: 14px;
                 border-width: 1px;
-                border: 2px solid #000;
+                border: 1px solid $color-title;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 font-size: 20px;
-                color: #000;
+                color: $color-title;
                 border-radius: 50%;
                 margin-right: 20px;
                 transition: all 0.5s ease;
@@ -258,12 +271,14 @@
             h3 {
                 letter-spacing: -0.03em;
                 margin: 0 0 13px;
+                font-size: $font-size !important;
             }
 
             p {
                 margin: 0;
-                line-height: normal;
-                color: #7e8aa7;
+    font-size: 14px;
+    line-height: normal;
+    color: #7e8aa7;
             }
         }
     }

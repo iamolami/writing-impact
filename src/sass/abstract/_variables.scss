@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 //Colors
 $color-green: #a4d037;
 $color-yellow: #fecd35;
 $color-red: #f05230;
 $color-darkgrey: #15171a;
-$color-midgrey: #738a94;
+$color-title: #1f2d3d;
 $color-lightgrey: #f1f1f1;
 $color-secondary-text: #979797;
 $color-border: #e1e1e1;
@@ -14,11 +16,9 @@ $primary: #02DEC2; //#002D62
 
 
 //Fonts
-$font-sans: 'Poppins', sans-serif;
-// $font-sans: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-$font-serif: Georgia,Times,serif;
-$font-mono: Menlo,Courier,monospace;
-$font-size: 12px;
+$font-sans: 'Open Sans', sans-serif;
+$heading-font:'Raleway', sans-serif;
+$font-size: 15px;
 $font-typo: 11px;
 $radius: 4px;
 $weight-light: 300;

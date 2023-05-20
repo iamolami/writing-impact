@@ -315,15 +315,10 @@
     text-transform: uppercase;
   }
 
-  h3 {
-    font-weight: 800;
-    line-height: 1.2;
-    margin: 0;
-  }
-
   p {
     line-height: 25px;
-    margin-top: 20px;
+    // margin-top: 20px;
+    font-size: $font-size;
   }
 }
 

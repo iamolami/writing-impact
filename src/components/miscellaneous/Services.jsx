@@ -9,7 +9,7 @@ const Services = () => {
             <div className="service__title">
                 <h4>What We Do</h4>
                 <Separator />
-                <h2 className='service__title-h3'>Our content marketing and content writing service</h2>
+                <h3 className='service__title-h3'>Our content marketing and content writing service</h3>
                 <p className='service__text'>
                     The recipe for your success not only lies in the creation of 
                     top-quality content but also in a stellar content strategy. 

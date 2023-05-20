@@ -67,7 +67,7 @@
             cursor: pointer;
 
             @include for-size(phone-only) {
-                padding: 10px 20px;
+                padding: 15px 0px 15px 0px;
             }
 
             &:hover {
@@ -78,15 +78,21 @@
 
             .material-symbols-outlined {
                 font-size: 40px;
+                color: $color-title;
                 transition: all 300ms ease-in-out;
             }
 
             p {
-                line-height: 20px;
+                line-height: normal;
+                font-size: 15px;
             }
 
             h3 {
-                line-height: 1.2;
+                color: $color-darkgrey;
+    font-family: $heading-font;
+    font-size: 20px !important;
+    line-height: 30px;
+    margin: 25px 0 10px;
             }
         }
     }
@@ -105,7 +111,7 @@
     border-width: 2px 0;
 
     @include for-size(phone-only) {
-        height: 290vh;
+        height: 100%;
     }
 
     .row {
@@ -200,13 +206,25 @@
                 }
             }
 
+            h3 {
+                color: $color-darkgrey;
+    font-family: $heading-font;
+    font-size: 20px !important;
+    line-height: 30px;
+    margin: 25px 0 10px;
+            }
+
             .material-symbols-outlined {
-                font-size: 50px;
+                font-size: 55px;
                 transition: all 300ms ease-in-out;
             }
 
             p {
                 line-height: 20px;
+                color: #7c7c7c;
+                transition: .5s;
+    margin: 0 0 20px;
+    font-size: $font-size;
             }
         }
     }
@@ -227,110 +245,6 @@
 
         i {
             font-size: 18px;
-        }
-    }
-}
-
-.process {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #daeaf430;
-    border: 2px solid #e2e4e8;
-    border-width: 2px 0;
-
-    .row {
-        margin-top: 50px;
-        @include for-size(phone-only) {
-            flex-direction: column;
-        }
-    }
-
-    .col-md-6 {
-        flex-basis: 26%;
-        position: relative;
-
-        &:not(:first-child) {
-            @include for-size(phone-only) {
-                margin-top: 20px;
-            }
-        }
-
-        &:nth-child(2) {
-            margin-top: 95px;
-
-            @include for-size(phone-only) {
-                margin-top: 20px;
-            }
-
-            &::after {
-                top: 29%;
-                left: 85%;
-                transform: rotate(-45deg);
-            }
-        }
-
-        &:not(:last-child) {
-            &::after {
-                content: "";
-                width: 117px;
-                height: 54px;
-                background-image: url("https://www.textmercato.com/_next/static/media/home-4-arrow-1.2a051bbb.png");
-                background-position: 50%;
-                background-repeat: no-repeat;
-                position: absolute;
-
-                @include for-size(phone-only) {
-                    display: none;
-                }
-            }
-        }
-
-        &:first-child {
-            &::after {
-                top: 33%;
-                left: 85%;
-            }
-        }
-    }
-
-    &__box {
-        text-align: center;
-        .material-symbols-outlined {
-            width: 170px;
-            height: 170px;
-            border: 3px dashed #113dbc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 50%;
-            font-size: 50px;
-            color: #113dbc;
-            margin-left: auto;
-            margin-right: auto;
-            transition: 0.5s;
-        }
-
-        &:hover {
-            .material-symbols-outlined {
-                background-color: $primary;
-                color: #fff;
-                border: none;
-            }
-        }
-
-        h3 {
-            font-size: 2.8rem;
-        }
-
-        p {
-            font-size: 13.5px;
-            line-height: 20px;
-            text-align: justify;
-
-            span {
-                font-weight: 700;
-            }
         }
     }
 }
@@ -388,16 +302,19 @@
         }
 
         h3 {
-            letter-spacing: -0.03em;
+            letter-spacing: -.03em;
             line-height: 1em;
-            margin-top: -10px;
+            margin: 0 0 10px;
+            font-family: $heading-font;
         }
 
         p {
             font-weight: 600;
-            color: #7e8aa7;
-            letter-spacing: -0.03em;
-            line-height: 1em;
+    font-size: 14px;
+    color: #7e8aa7;
+    letter-spacing: -.03em;
+    line-height: 1em;
+    margin: 0;
         }
     }
 }
@@ -458,13 +375,17 @@
              
             h3 {
                 color: #333 !important;
-                margin-top: -6px;
+                margin: 0;
+                font-family: $heading-font;
+    font-size: 20px !important;
             }
 
             span {
-                font-size: 13px;
+                font-size: 12px;
                 text-transform: uppercase;
                 font-weight: 600;
+                font-family: $heading-font;
+                color: #333 !important;
                 letter-spacing: 0.2em;
             }
         }
@@ -474,7 +395,8 @@
         margin-top: 30px;
 
         p {
-            line-height: 25px;
+            line-height: normal;
+            font-size: 15px !important;
         }
     }
 
@@ -543,16 +465,6 @@
         flex-basis: 50%;
         height: 100%;
 
-        h3 {
-            font-weight: 800;
-            line-height: 1.2;
-            margin: 0;
-        }
-
-        // .thm-btn {
-        //     margin-top: 35px !important;
-        // }
-
         &:first-child {
             text-align: left;
         }
@@ -612,19 +524,22 @@
             margin: 0 0 10px;
         }
         &-main {
-            font-weight: 800;
-            line-height: 1.2;
-            margin: 0;
+            color: $color-darkgrey;
+    font-family: $heading-font;
+    font-size: 20px !important;
+    letter-spacing: -.03em;
+    line-height: normal;
+    margin: 0 0 25px;
         }
         &-text {
             -webkit-box-orient: vertical;
             display: -webkit-box;
-            line-height: 1.5;
-            margin-top: 12px;
+            line-height: normal;
             max-width: 720px;
             overflow-y: hidden;
             word-break: break-word;
             -webkit-line-clamp: 3;
+            font-size: $font-size;
         }
         &-footer {
             align-items: center;
@@ -688,9 +603,10 @@
             font-size: 50px;
             letter-spacing: -0.03em;
             margin: 0 0 5px;
+            font-family: $heading-font;
 
             @include for-size(phone-only) {
-                font-size: 15px;
+                font-size: 35px;
             }
         }
     }
@@ -743,6 +659,7 @@
 
         p {
             line-height: 25px;
+            font-size: $font-size;
             margin: 25px 0 0;
         }
     }
@@ -797,7 +714,8 @@
         padding-left: 0;
 
         h3 {
-            font-size: 13px;
+            font-size: 15px !important;
+            font-family: $heading-font;
             letter-spacing: -0.03em;
             // margin: 0 0 30px;
             color: #1f2d3d;
@@ -816,7 +734,7 @@
         li {
             display: block;
             text-align: left;
-            margin-bottom: 10px;
+            margin-top: 0px !important;
             padding-left: 20px;
             position: relative;
             &::before {

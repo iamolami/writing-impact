@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Separator from "./Separator";
 import testimony from "../../data/testimony";
 
@@ -26,7 +26,7 @@ const DisplayTestimonies = () => {
     <section className="section testimony">
       <div className="container">
         <div className="thmtitle">
-          <h3>Hear From Our Happy Customers</h3>
+          <h3>Hear From Our Happy Clients</h3>
         </div>
         <Separator />
         <Swiper

@@ -27,7 +27,7 @@ const DisplayFAQs = () => {
     <div className="FAQs section">
       <div className="container">
         <div className="thmtitle">
-          <h3>Go on, ask us anything. Let’s get into the nitty gritty</h3>
+          <h3 style={{ marginBottom: '20px' }}>Go on, ask us anything. Let’s get into the nitty gritty</h3>
           <p>Anything missing? Ask us everything at your discovery call.</p>
         </div>
         <div className="FAQs__row">

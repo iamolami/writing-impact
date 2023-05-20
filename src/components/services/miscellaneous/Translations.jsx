@@ -28,47 +28,6 @@ const Translations = () => {
                 who are comfortable transacting in their preferred language. Explore our network of 
                 global translators to convert your content, make better impressions, and enhance engagement with your users.
               </p>
-              <div className="services__flexBox">
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Order Online</h3>
-                    <p>
-                      Choose from a variety of projects and get going in less
-                      than 5 minutes{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Dashboard View</h3>
-                    <p>Track your order in real-time and provide feedback</p>
-                  </div>
-                </div>
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Approval Management</h3>
-                    <p>Provide feedback and keep control 100 percent</p>
-                  </div>
-                </div>
-                <div className="services__flexBox-box">
-                  <div className="services__flexBox-icon">
-                    <span class="material-symbols-outlined">check</span>
-                  </div>
-                  <div className="services__flexBox-content">
-                    <h3>Single Invoice</h3>
-                    <p>Multiple projects can be managed and paid together</p>
-                  </div>
-                </div>
-              </div>
               <a href="/" className="thm-btn" style={{ marginTop: "30px" }}>
                 Learn More
               </a>

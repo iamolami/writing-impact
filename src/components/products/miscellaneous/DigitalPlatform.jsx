@@ -11,12 +11,12 @@ const DigitalPlatform = () => {
                             <div className="products__contentBox-title">
                                 <h3>Digital Content Platform</h3>
                             </div>
-                            <p style={{ fontWeight: '600', fontSize: '16px' }}>
+                            <p style={{ fontWeight: '600', fontSize: '15px' }}>
                                 When managing projects (small or large) across different types of content, 
                                 manual process can slow down your entire content creation journey and compromise 
                                 your goals.
                             </p>
-                            <p style={{ marginTop: '20px', fontSize: '13px' }}>
+                            <p style={{ marginTop: '20px', fontSize: '14px' }}>
                                 At Writing Impact, we give you access to our Digital Content Platform. It enables you to scale, 
                                 control, and track all your projects on a single dashboard. It further allows you to communicate 
                                 with us for varied requirements and genres. 
@@ -29,7 +29,7 @@ const DigitalPlatform = () => {
                                     </div>
                                     <div className='products__flexBox-content'>
                                         <h3>Order Online</h3>
-                                        <small>Choose from a variety of projects and get going in less than 5 minutes </small>
+                                        <p>Choose from a variety of projects and get going in less than 5 minutes </p>
                                     </div>
                                 </div>
                                 <div className='products__flexBox-box'>

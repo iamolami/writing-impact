@@ -138,6 +138,8 @@ html {
 
 a {
     background-color: transparent;
+    color: #15171a;
+    text-decoration: none;
 }
 
 a:active,
@@ -317,11 +319,8 @@ body {
     background: #fff;
     color: $color-darkgrey;
     font-family: $font-sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.6em;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 hr {
@@ -436,20 +435,15 @@ blockquote cite a {
     font-weight: 400;
 }
 
-a {
-    color: #15171a;
-    text-decoration: none;
-    font-size: 1.8rem;
-}
-
 p {
-    color: #15171a;
-    font-size: 2rem;
+    color: $color-darkgrey;
+    font-size: 18px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     p {
-        font-size: 1.9rem;
+        font-size: 16px;
+        line-height: normal;
     }
 }
 
@@ -467,39 +461,44 @@ h6 {
 }
 
 h1 {
-    font-size: 7rem;
-    font-weight: 700;
+    font-size: 48px;
+    font-family: $heading-font;
+    font-weight: $weight-medium;
     letter-spacing: -0.015em;
     margin: 0 0 0.5em;
 }
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 35px;
     }
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 27px;
     font-weight: 700;
     margin: 1.5em 0 0.5em;
 }
 
 @media (max-width: 600px) {
     h2 {
-        font-size: 2.3rem;
+        font-size: 18px;
     }
 }
 
 h3 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin: 1.5em 0 0.5em;
+    margin: 0;
+    font-size: 32px;
+    line-height: normal;
+    font-family: $heading-font;
+    font-weight: $weight-bold;
+    letter-spacing: -.03em;
+    color: $color-title;
 }
 
 @media (max-width: 600px) {
     h3 {
-        font-size: 2.2rem;
+        font-size: 30px !important;
     }
 }
 
@@ -537,3 +536,4 @@ h6 {
     width: 100%;
     position: relative;
 }
+
