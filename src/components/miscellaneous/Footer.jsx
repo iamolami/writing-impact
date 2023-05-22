@@ -9,14 +9,8 @@ const DisplayFooter = () => {
           <div className="footer__upperBox">
             <div className="row">
               <div className="col-md-5">
-                <a href="/">
-                  <img
-                    src={logo}
-                    alt="logo"
-                    loading="lazy"
-                    width={256}
-                    height={67}
-                  />
+                <a href="/" className="header__topBox-logo">
+                  WritingImpact
                 </a>
                 <p>
                   Quality content is the key to add value to the success of your

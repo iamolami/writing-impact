@@ -7,10 +7,10 @@ import DisplayTestimonies from '../miscellaneous/Testimonies'
 import DisplayContact from '../miscellaneous/Contact'
 import DisplayFooter from '../miscellaneous/Footer'
 
-const Auth = () => {
+const Auth = ({ setSearchOpen, navbarOpen, setNavbarOpen, location}) => {
   return (
     <>
-      <Header />
+      <Header setNavbarOpen={setNavbarOpen} setSearchOpen={setSearchOpen} navbarOpen={navbarOpen}/>
       <Banner />
       <Partner />
       <DisplayProcess />

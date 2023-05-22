@@ -42,18 +42,16 @@
         }
 
         h1 {
-            font-size: 55px;
             line-height: 75px;
             letter-spacing: -0.03em;
-            font-weight: 800;
-
+            
             @include for-size(phone-only) {
-                font-size: 40px;
                 line-height: normal;
             }
 
             span {
                 color: $primary;
+                font-weight: $weight-semi;
             }
         }
     }
@@ -117,7 +115,7 @@
                 max-width: 100%;
                 background-color: #f5f8fa;
                 display: inline-block;
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: inherit;
                 font-size: 16px;
                 font-weight: normal;
                 line-height: 22px;

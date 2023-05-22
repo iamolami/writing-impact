@@ -4,6 +4,7 @@ import DisplayProducts from "../../pages/products";
 import DisplayServices from "../../pages/service";
 import DisplayText from "../../pages/text-content";
 import DisplayAuth from "../../pages/authentication"
+import DisplaySample from "../../pages/samples";
 
 const rootPath = process.env.PUBLIC_URL;
 
@@ -39,6 +40,11 @@ const navigations = [
     Component: DisplayAuth,
     breadcrumbName: "Authentication",
   },
+  {
+    path: "/samples",
+    Component: DisplaySample,
+    breadcrumbName: "Sample Contents",
+  }
 ];
 
 export default navigations;

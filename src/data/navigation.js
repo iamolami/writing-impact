@@ -33,7 +33,7 @@ const navLinks = [
     link: `/resources`,
     arrow: "keyboard_arrow_down",
     dropdown: [
-      { name: "Content Samples" },
+      { name: "Content Samples", link: '/samples' },
       { name: "Blogs" },
       { name: "Glossary" },
       { name: "FAQs" }

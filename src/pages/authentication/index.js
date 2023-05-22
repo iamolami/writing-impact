@@ -1,10 +1,10 @@
 import React from 'react'
 import Auth from '../../components/authentication'
 
-const DisplayAuth = () => {
+const DisplayAuth = ({ setSearchOpen, navbarOpen, setNavbarOpen, location}) => {
   return (
     <>
-      <Auth />
+      <Auth setNavbarOpen={setNavbarOpen} setSearchOpen={setSearchOpen} navbarOpen={navbarOpen}/>
     </>
   )
 }

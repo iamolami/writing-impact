@@ -99,7 +99,7 @@ const styles = {
   menuBtn: {
     width: '100%',
     alignItems: 'center',
-    background: '#02DEC2',
+    background: '#002D62',
     borderRadius: '48px',
     color: '#fff',
     display: 'inline-flex',
