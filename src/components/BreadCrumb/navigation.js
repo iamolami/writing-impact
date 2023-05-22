@@ -5,6 +5,7 @@ import DisplayServices from "../../pages/service";
 import DisplayText from "../../pages/text-content";
 import DisplayAuth from "../../pages/authentication"
 import DisplaySample from "../../pages/samples";
+import DisplayBlogPage from "../../pages/blogs";
 
 const rootPath = process.env.PUBLIC_URL;
 
@@ -43,6 +44,11 @@ const navigations = [
   {
     path: "/samples",
     Component: DisplaySample,
+    breadcrumbName: "Sample Contents",
+  },
+  {
+    path: "/blogs",
+    Component: DisplayBlogPage,
     breadcrumbName: "Sample Contents",
   }
 ];

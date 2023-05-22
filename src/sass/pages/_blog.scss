@@ -1,0 +1,169 @@
+.blogs {
+    margin-top: 100px;
+    @include for-size(phone-only) {
+        margin-top: 90px;
+    }
+
+    &__wrapper {
+        display: grid;
+        gap: 4.8vmin 4vmin;
+        grid-template-columns: repeat(6, 1fr);
+        position: relative;
+        @include for-size(phone-only) {
+            grid-gap: 40px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__row {
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        grid-column: span 2;
+        position: relative;
+        word-break: break-word;
+        @include for-size(desktop-up) {
+            grid-gap: 4vmin;
+            border-top: 0;
+            display: grid;
+            grid-column: span 6;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &__col-md-9 {
+        overflow: hidden;
+        display: block;
+        &::after {
+            content: "";
+            display: block;
+        }
+        @include for-size(desktop-up) {
+            grid-column: span 2;
+            height: 70vh;
+            margin-bottom: 0;
+            position: relative;
+        }
+    }
+
+    &__col-md-3 {
+        @include for-size(desktop-up) {
+            grid-column: span 1;
+        }
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        object-fit: cover;
+        inset: 0;
+        -o-object-fit: cover;
+        object-fit: cover;
+        @include for-size(desktop-up) {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    &__section {
+        &-box {
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+            position: relative;
+            word-break: break-word;
+            @include for-size(desktop-up) {
+                grid-column: span 3;
+            }
+        }
+    }
+
+    &__img {
+        height: 100%;
+        inset: 0;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        @include for-size(desktop-up) {
+            height: 55vh;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-top: 32px;
+        &-tags {
+            align-items: center;
+            color: #979797;
+            display: flex;
+            font-size: 1.4rem;
+            font-weight: 600;
+            gap: 12px;
+            letter-spacing: -0.005em;
+            line-height: 1;
+            margin: 0 0 10px;
+        }
+        &-main {
+            color: $color-darkgrey;
+            font-family: $heading-font;
+            font-size: 20px !important;
+            letter-spacing: -0.03em;
+            line-height: normal;
+            margin: 0 0 10px;
+        }
+        &-text {
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            line-height: normal;
+            max-width: 720px;
+            overflow-y: hidden;
+            word-break: break-word;
+            -webkit-line-clamp: 3;
+            font-size: $font-size;
+        }
+        &-footer {
+            align-items: center;
+            display: flex;
+            gap: 6px;
+            color: #979797;
+            font-size: 1.3rem;
+            margin-top: 12px;
+            padding: 0;
+        }
+        &-length {
+            &::before {
+                background-color: #979797;
+                border-radius: 50%;
+                content: "";
+                height: 2px;
+                width: 2px;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__postCard {
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        grid-column: span 2;
+        position: relative;
+        word-break: break-word;
+    }
+
+    &__break {
+        -webkit-box-orient: vertical;
+            display: -webkit-box;
+            line-height: normal;
+            overflow-y: hidden;
+            font-size: $font-size;
+    }
+}
