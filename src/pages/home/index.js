@@ -1,25 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import DisplayHeader from "../../components/header";
 import DisplayMiscellaneous from "../../components/miscellaneous";
 import DisplayPreloader from "../../components/preloader";
 
-const HomePage = ({
-  setSearchOpen,
-  navbarOpen,
-  setNavbarOpen,
-  setLoader,
-  loader,
-  location
-}) => {
-  useEffect(() => {
-    // setLoader(true);
-    setTimeout(() => {
-      setLoader(false);
-    }, 8000);
-  });
+const HomePage = ({ setSearchOpen, navbarOpen, setNavbarOpen, loader }) => {
   return (
     <React.Fragment>
-      {!loader ? 
+      {!loader ? (
         <React.Fragment>
           <DisplayHeader
             setSearchOpen={setSearchOpen}
@@ -28,9 +15,9 @@ const HomePage = ({
           />
           <DisplayMiscellaneous />
         </React.Fragment>
-      : 
+      ) : (
         <DisplayPreloader />
-      }
+      )}
     </React.Fragment>
   );
 };

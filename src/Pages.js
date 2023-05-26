@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter,  Route } from "react-router-dom";
 import navigations from "./components/BreadCrumb/navigation";
 import CustomRoutes from "./components/miscellaneous/CustomRoutes";
@@ -6,6 +6,12 @@ import CustomRoutes from "./components/miscellaneous/CustomRoutes";
 const Pages = ({ setSearchOpen }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    // setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+    }, 3000);
+  });
   return (
     <BrowserRouter>
       <CustomRoutes>

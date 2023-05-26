@@ -4,6 +4,7 @@ import Custom from "./iframes/Custom";
 import CustomIframe from "./iframes/CustomFrame";
 import { HelmetProvider } from "react-helmet-async";
 import Pages from "./Pages"
+import DisplayChatPage from "./components/chats";
 
 function App() {
   const [search, setSearchOpen] = useState(false);
@@ -19,6 +20,7 @@ function App() {
             <Custom setSearchOpen={setSearchOpen} />
           </CustomIframe>
         </HelmetProvider>
+        <DisplayChatPage />
     </>
   );
 }

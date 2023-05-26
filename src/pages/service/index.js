@@ -4,23 +4,31 @@ import Header from "../../components/header/Header";
 import DisplayService from "../../components/services/miscellaneous";
 import DisplayContact from "../../components/miscellaneous/Contact";
 import DisplayFooter from "../../components/miscellaneous/Footer";
+import DisplayPreloader from "../../components/preloader";
 
 const DisplayServices = ({
   setSearchOpen,
   navbarOpen,
   setNavbarOpen,
+  loader,
 }) => {
   return (
     <>
-      <Header
-        setNavbarOpen={setNavbarOpen}
-        setSearchOpen={setSearchOpen}
-        navbarOpen={navbarOpen}
-      />
-      <ServiceBanner />
-      <DisplayService />
-      <DisplayContact />
-      <DisplayFooter />
+      {!loader ? (
+        <React.Fragment>
+          <Header
+            setNavbarOpen={setNavbarOpen}
+            setSearchOpen={setSearchOpen}
+            navbarOpen={navbarOpen}
+          />
+          <ServiceBanner />
+          <DisplayService />
+          <DisplayContact />
+          <DisplayFooter />
+        </React.Fragment>
+      ) : (
+        <DisplayPreloader />
+      )}
     </>
   );
 };
