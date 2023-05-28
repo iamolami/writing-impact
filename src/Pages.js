@@ -3,7 +3,7 @@ import { BrowserRouter,  Route } from "react-router-dom";
 import navigations from "./components/BreadCrumb/navigation";
 import CustomRoutes from "./components/miscellaneous/CustomRoutes";
 
-const Pages = ({ setSearchOpen }) => {
+const Pages = ({ setSearchOpen, switchDark, setSwitchDark }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [loader, setLoader] = useState(true);
   useEffect(() => {
@@ -27,6 +27,8 @@ const Pages = ({ setSearchOpen }) => {
                 setNavbarOpen={setNavbarOpen}
                 loader={loader}
                 setSearchOpen={setSearchOpen}
+                setSwitchDark={setSwitchDark}
+                switchDark={switchDark}
               />
             }
           />

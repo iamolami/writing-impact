@@ -49,68 +49,15 @@
     right: 0;
     z-index: 100;
     -webkit-transform: translate3d(0, 0, 0);
-    border-bottom: 1px solid #eee;
-
-    &__topBar {
-        width: 100%;
-        padding: 10px 80px;
-        background-color: $color-darkmode;
-        color: #fff;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        @include for-size(phone-only) {
-            padding: 10px 20px;
-        }
-
-        &-box {
-            &:first-child {
-                a {
-                    &:not(:first-child) {
-                        margin-left: 20px;
-                    }
-                }
-            }
-        }
-
-        a {
-            color: #fff;
-            line-height: 30px;
-        }
-
-        &-social-widget {
-            display: flex;
-            align-items: center;
-            margin: 0 0 0;
-            @include for-size(phone-only) {
-                display: none;
-            }
-            a {
-                font-size: 12px;
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-                float: left;
-                color: #fff;
-                border-radius: 2px;
-                background-color: $primary;
-                text-align: center;
-                margin-right: 6px;
-
-                @include for-size(phone-only) {
-                    font-size: 11px;
-                    width: 25px;
-                    height: 25px;
-                    margin-right: 3px;
-                }
-            }
-        }
-    }
+    @include themify($themes) {
+        border-bottom: 1px solid themed('color-border');
+      }
 
     &__topBox {
         height: 75px;
-        background: #fff;
+        @include themify($themes) {
+            background: themed('color-header-bg');
+          }
 
         @include for-size(phone-only) {
             height: 70px;
@@ -204,7 +151,9 @@
                 ul {
                     position: absolute;
                     min-width: 230px;
-                    background-color: #fff;
+                    @include themify($themes) {
+                        background: themed('color-page-background');
+                      }
                     border-top: 2px solid $primary;
                     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0 5px 1px rgba(0, 0, 0, 0.05);
                     transform-origin: top;
@@ -222,7 +171,9 @@
                         &:hover {
                             background-color: $primary;
                             a {
-                                color: #fff;
+                                @include themify($themes) {
+                                    color: themed('color-text');
+                                  }
                             }
                         }
                         &:not(:first-child) {
@@ -232,7 +183,9 @@
                         a {
                             display: block;
                             padding: 9.5px 20px;
-                            color: $color-darkgrey;
+                            @include themify($themes) {
+                                color: themed('color-text');
+                              }
                             font-size: 14px;
                             word-break: break-all;
                             transition: all 0.5s ease;
@@ -334,7 +287,9 @@
 
             &::before,
             &::after {
-                background-color: black;
+                @include themify($themes) {
+                    background: themed('color-text');
+                  }
                 content: "";
                 height: 1px;
                 left: 3px;
@@ -369,6 +324,13 @@
                 margin-right: 10px;
                 background-color: transparent;
             }
+
+            .material-symbols-outlined {
+                cursor: pointer;
+                font-size: 25px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
         }
     }
 
@@ -381,6 +343,13 @@
             flex-direction: column-reverse;
             gap: 16px;
             width: 100%;
+        }
+
+        .material-symbols-outlined {
+            @include themify($themes) {
+                color: themed('color-text');
+              }
+            cursor: pointer;
         }
     }
 
@@ -395,7 +364,9 @@
             grid-column-start: 1;
             grid-template-columns: 1fr auto auto;
             height: 94px;
-            background-color: #fff;
+            @include themify($themes) {
+                background: themed('color-page-background');
+              }
         }
         &-logo {
             color: inherit;
@@ -486,10 +457,11 @@
         margin-top: 30px;
     }
     &__row {
+        margin-top: 80px;
         @include for-size(phone-only) {
             flex-direction: column;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 60px;
         }
     }
     &__col-md-8 {
@@ -510,6 +482,7 @@
 
         img {
             width: 100%;
+            margin-top: 70px;
             @include for-size(phone-only) {
                 display: none;
             }
@@ -551,6 +524,9 @@
         line-height: 33px;
         margin: 30px 0 40px;
         font-size: $font-size;
+        @include themify($themes) {
+            color: themed('color-text');
+          }
         @include for-size(phone-only) {
             line-height: normal;
         }
@@ -596,7 +572,6 @@
 }
 
 .mtop {
-    border-bottom: 1px solid #eee;
     box-shadow: 0 15px 30px 0 #0000000f;
 }
 
@@ -605,13 +580,16 @@
         position: relative;
         max-width: 300px;
         height: 100vh;
-        margin-top: -10px;
-        background-color: #fff;
+        margin-top: -5px;
+        @include themify($themes) {
+            background: themed('color-page-background');
+          }
         padding: 10px 20px;
         visibility: visible;
         opacity: 1;
         transform: none;
         transition: transform .5s;
+        box-shadow: $box-shadow;
 
     &__menuUl {
         list-style: none;
@@ -626,7 +604,9 @@
         padding-top: 10px;
 
         &:not(:last-child) {
-            border-bottom: 1.5px solid #e2e4e8;
+            @include themify($themes) {
+                border-bottom: 1px solid themed('color-border');
+              }
         }
 
         .material-symbols-outlined {
@@ -637,7 +617,9 @@
     }
     &__menuLink {
         font-weight: 600;
-        color: $color-darkgrey;
+        @include themify($themes) {
+            color: themed('color-text');
+          }
         transition: all .4s ease-in-out;
 
         &:hover {
@@ -661,7 +643,9 @@
         font-weight: 600;
         cursor: pointer;
         transition: all .4s ease-in-out;
-
+        @include themify($themes) {
+            color: themed('color-text');
+          }
         &:hover {
             color: $primary;
         }

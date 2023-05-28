@@ -33,3 +33,51 @@
 		}
 	}
 }
+
+
+// Dark and Light Mode Integration
+$themes: (
+  light: (
+    color-page-background: $color-lightmode,
+    color-text: $color-darkgrey,
+    color-border: $color-border-light,
+	color-btn: $color-lightgrey,
+	color-title: $color-title,
+	color-header-bg: $color-header-bg-light,
+	color-secondary-bg: $color-secondary-bg-light,
+	color-text-box: $color-text-light,
+  ),
+  dark: (
+    color-page-background: $color-darkmode,
+    color-text: $color-lightgrey,
+    color-border: $color-border-dark,
+	color-btn: $color-darkgrey,
+	color-title: $color-lightgrey,
+	color-header-bg: $color-header-bg-dark,
+	color-secondary-bg: $color-secondary-bg-dark,
+	color-text-box: $color-text-dark,
+  ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

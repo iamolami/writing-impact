@@ -4,10 +4,11 @@
         margin-top: 30px;
     }
     &__row {
+        margin-top: 80px;
         @include for-size(phone-only) {
             flex-direction: column;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 60px;
         }
     }
     &__col-md-8 {
@@ -42,6 +43,7 @@
 
         img {
             width: 100%;
+            margin-top: 70px;
             vertical-align: middle;
             animation: ImgBounce 5s ease-in-out 0s infinite alternate;
              @include for-size(phone-only) {
@@ -57,7 +59,7 @@
     }
 
     &__content {
-        margin-top: 50px;
+        margin-top: 80px;
         @include for-size(phone-only) {
             width: 100%;
             text-align: center;
@@ -117,7 +119,7 @@
         width: 100%;
         height: 100%;
         border: 2px solid #eef1fe;
-        background-color: #fff;
+        // background-color: #fff;
         margin-bottom: 30px;
         text-align: center;
         padding: 29px 40px;
@@ -165,10 +167,12 @@
     }
 
     &__wrapper {
-        background-color: #f8f9fe;
         padding-top: 80px;
         padding-bottom: 80px;
-        border: 2px solid #e2e4e8;
+        @include themify($themes) {
+            background: themed('color-secondary-bg');
+            border: 2px solid themed('color-border');
+          }
     border-width: 2px 0;
     }
 
@@ -264,8 +268,10 @@
             margin-bottom: 30px;
             padding-top: 40px;
             padding-bottom: 40px;
-            background-color: #fff;
-            box-shadow: 0 10px 80px 0 hsla(0, 0%, 74%, 0.5);
+            @include themify($themes) {
+                background: themed('color-header-bg');
+              }
+            box-shadow: $box-shadow;
             border-radius: 10px;
             text-align: center;
 
@@ -285,7 +291,9 @@
 }
 
 .bg-white {
-    background-color: #fff !important;
+    @include themify($themes) {
+        background: themed('color-header-bg') !important;
+      }
     border: 0 !important;
     border-width: 0 !important;
 }
@@ -337,10 +345,12 @@
             height: 130px;
             position: relative;
             border-radius: 50%;
-            border: 1px solid #eee;
             margin: 0 auto;
             padding: 15px;
-            background-color: #fff;
+            @include themify($themes) {
+                background: themed('color-header-bg');
+                border: 1px solid themed('color-border');
+              }
             z-index: 99;
             overflow: hidden;
 
@@ -353,8 +363,10 @@
         }
 
         &-content {
-            background-color: #fff;
-            box-shadow: 0 16px 32px 0 hsla(0, 0%, 80%);
+            @include themify($themes) {
+                background: themed('color-header-bg');
+              }
+            box-shadow: $box-shadow;
             margin-top: -60px;
             padding-top: 80px;
             border-radius: 7px;
@@ -370,7 +382,9 @@
                 margin: 0;
     font-size: 24px !important;
     font-family: $heading-font;
-    color: $color-title;
+    @include themify($themes) {
+        color: themed('color-title');
+      }
     letter-spacing: -.03em;
     line-height: 1em;
             }
@@ -378,7 +392,9 @@
             p {
                 font-size: 14px;
     font-weight: 400;
-    color: $color-title;
+    @include themify($themes) {
+        color: themed('color-title');
+      }
     line-height: normal;
     margin: 15px 0 0;
     padding: 0 20px;
@@ -393,11 +409,13 @@
     }
 
     &__whyUs {
-        background-color: #f8f9fe;
+        @include themify($themes) {
+            background: themed('color-secondary-bg');
+            border: 2px solid themed('color-border');
+          }
         margin-top: 80px;
         padding-top: 80px;
         padding-bottom: 80px;
-        border: 2px solid #e2e4e8;
         border-width: 2px 0;
 
         &-row {
@@ -506,10 +524,12 @@
 }
 
 .FAQs {
-    border: 2px solid #e2e4e8;
     border-width: 2px 0;
     padding: 50px 0 30px;
-    background-color: #f8f9fe;
+    @include themify($themes) {
+        background: themed('color-secondary-bg');
+        border: 2px solid themed('color-border');
+      }
     margin-top: 100px;
 
     &__row {
@@ -546,14 +566,18 @@
         border-radius: 2px;
 
         &-item {
-            background-color: #fff;
+            @include themify($themes) {
+                background: themed('color-header-bg');
+              }
     border-radius: 10px;
     margin-bottom: 15px;
         }
 
         &-btn {
             background-color: transparent;
-    color: #1d293f;
+            @include themify($themes) {
+                color: themed('color-text-box')
+              }
     padding-right: 40px;
     position: relative;
     cursor: pointer;
