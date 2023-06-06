@@ -46,9 +46,9 @@
             margin-top: 70px;
             vertical-align: middle;
             animation: ImgBounce 5s ease-in-out 0s infinite alternate;
-             @include for-size(phone-only) {
+            @include for-size(phone-only) {
                 display: none;
-             }
+            }
         }
 
         @include for-size(phone-only) {
@@ -68,7 +68,7 @@
         h1 {
             line-height: 75px;
             letter-spacing: -0.03em;
-            
+
             @include for-size(phone-only) {
                 line-height: normal;
             }
@@ -110,8 +110,8 @@
         @include for-size(phone-only) {
             flex-direction: column;
             grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        height: 100%;
+            grid-template-rows: repeat(1, 1fr);
+            height: 100%;
         }
     }
 
@@ -170,10 +170,10 @@
         padding-top: 80px;
         padding-bottom: 80px;
         @include themify($themes) {
-            background: themed('color-secondary-bg');
-            border: 2px solid themed('color-border');
-          }
-    border-width: 2px 0;
+            background: themed("color-secondary-bg");
+            border: 2px solid themed("color-border");
+        }
+        border-width: 2px 0;
     }
 
     &__row {
@@ -198,7 +198,7 @@
 
         @include for-size(phone-only) {
             flex: 0 0 100%;
-        max-width: 100%;
+            max-width: 100%;
         }
 
         img {
@@ -232,7 +232,6 @@
         }
     }
 
-    
     &__listing {
         padding-right: 70px;
 
@@ -258,9 +257,9 @@
 
             @include for-size(phone-only) {
                 flex: 0 0 100%;
-            max-width: 100%;
-            padding-right: 10px;
-            padding-left: 10px;
+                max-width: 100%;
+                padding-right: 10px;
+                padding-left: 10px;
             }
         }
 
@@ -269,8 +268,8 @@
             padding-top: 40px;
             padding-bottom: 40px;
             @include themify($themes) {
-                background: themed('color-header-bg');
-              }
+                background: themed("color-header-bg");
+            }
             box-shadow: $box-shadow;
             border-radius: 10px;
             text-align: center;
@@ -278,7 +277,6 @@
             @include for-size(phone-only) {
                 margin-bottom: 20px;
             }
-
 
             h3 {
                 letter-spacing: -0.03em;
@@ -292,8 +290,8 @@
 
 .bg-white {
     @include themify($themes) {
-        background: themed('color-header-bg') !important;
-      }
+        background: themed("color-header-bg") !important;
+    }
     border: 0 !important;
     border-width: 0 !important;
 }
@@ -304,7 +302,7 @@
 
     @include for-size(phone-only) {
         padding-left: 0px !important;
-    padding-right: 0px !important;
+        padding-right: 0px !important;
     }
 }
 
@@ -333,7 +331,7 @@
 
         @include for-size(phone-only) {
             flex: 0 0 100%;
-        max-width: 100%;
+            max-width: 100%;
         }
 
         &-single {
@@ -348,9 +346,9 @@
             margin: 0 auto;
             padding: 15px;
             @include themify($themes) {
-                background: themed('color-header-bg');
-                border: 1px solid themed('color-border');
-              }
+                background: themed("color-header-bg");
+                border: 1px solid themed("color-border");
+            }
             z-index: 99;
             overflow: hidden;
 
@@ -364,8 +362,8 @@
 
         &-content {
             @include themify($themes) {
-                background: themed('color-header-bg');
-              }
+                background: themed("color-header-bg");
+            }
             box-shadow: $box-shadow;
             margin-top: -60px;
             padding-top: 80px;
@@ -380,25 +378,25 @@
 
             h3 {
                 margin: 0;
-    font-size: 24px !important;
-    font-family: $heading-font;
-    @include themify($themes) {
-        color: themed('color-title');
-      }
-    letter-spacing: -.03em;
-    line-height: 1em;
+                font-size: 24px !important;
+                font-family: $heading-font;
+                @include themify($themes) {
+                    color: themed("color-title");
+                }
+                letter-spacing: -0.03em;
+                line-height: 1em;
             }
 
             p {
                 font-size: 14px;
-    font-weight: 400;
-    @include themify($themes) {
-        color: themed('color-title');
-      }
-    line-height: normal;
-    margin: 15px 0 0;
-    padding: 0 20px;
-    min-height: 130px;
+                font-weight: 400;
+                @include themify($themes) {
+                    color: themed("color-title");
+                }
+                line-height: normal;
+                margin: 15px 0 0;
+                padding: 0 20px;
+                min-height: 130px;
             }
         }
     }
@@ -410,9 +408,9 @@
 
     &__whyUs {
         @include themify($themes) {
-            background: themed('color-secondary-bg');
-            border: 2px solid themed('color-border');
-          }
+            background: themed("color-secondary-bg");
+            border: 2px solid themed("color-border");
+        }
         margin-top: 80px;
         padding-top: 80px;
         padding-bottom: 80px;
@@ -438,7 +436,7 @@
 
             @include for-size(phone-only) {
                 flex: 0 0 100%;
-            max-width: 100%;
+                max-width: 100%;
             }
 
             img {
@@ -527,9 +525,9 @@
     border-width: 2px 0;
     padding: 50px 0 30px;
     @include themify($themes) {
-        background: themed('color-secondary-bg');
-        border: 2px solid themed('color-border');
-      }
+        background: themed("color-secondary-bg");
+        border: 2px solid themed("color-border");
+    }
     margin-top: 100px;
 
     &__row {
@@ -542,24 +540,24 @@
         @include for-size(phone-only) {
             padding: 0px 10px;
             margin-right: 0px;
-        margin-left: 0px;
+            margin-left: 0px;
         }
     }
 
     &__col-lg-4 {
         flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
-    margin-left: 16.6666666667%;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    width: 100%;
+        max-width: 66.6666666667%;
+        margin-left: 16.6666666667%;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        width: 100%;
 
-    @include for-size(phone-only) {
-        flex: 0 0 100%;
-    max-width: 100%;
-    margin-left: 0%;
-    }
+        @include for-size(phone-only) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-left: 0%;
+        }
     }
 
     &__accordion {
@@ -567,63 +565,63 @@
 
         &-item {
             @include themify($themes) {
-                background: themed('color-header-bg');
-              }
-    border-radius: 10px;
-    margin-bottom: 15px;
+                background: themed("color-header-bg");
+            }
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
         &-btn {
             background-color: transparent;
             @include themify($themes) {
-                color: themed('color-text-box')
-              }
-    padding-right: 40px;
-    position: relative;
-    cursor: pointer;
-    padding: 18px;
-    text-align: left;
-    width: 100%;
-    border: none;
-    font-size: 13px;
+                color: themed("color-text-box");
+            }
+            padding-right: 40px;
+            position: relative;
+            cursor: pointer;
+            padding: 18px;
+            text-align: left;
+            width: 100%;
+            border: none;
+            font-size: 13px;
 
-    &::before {
-        content: "";
-    display: inline-block;
-        height: 24px;
-    width: 24px;
-    background-image: url('/src/assets/images/up-arrow.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: none;
-    margin-right: 0;
-    position: absolute;
-    right: 12px;
-    top: 20px;
-    transform: inherit;
-    }
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 24px;
+                width: 24px;
+                background-image: url("/src/assets/images/up-arrow.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                border: none;
+                margin-right: 0;
+                position: absolute;
+                right: 12px;
+                top: 20px;
+                transform: inherit;
+            }
 
-    &[aria-expanded=true], &[aria-selected=true] {
-        &::before {
-            transform: rotate(180deg);
-        }
-    }
+            &[aria-expanded="true"],
+            &[aria-selected="true"] {
+                &::before {
+                    transform: rotate(180deg);
+                }
+            }
         }
 
         &-panel {
-            animation: fadein .35s ease-in;
-    padding: 15px;
-    display: none;
+            animation: fadein 0.35s ease-in;
+            padding: 15px;
+            display: none;
 
-    p {
-        font-size: 13px;
-        line-height: 25px;
-        margin-bottom: 25px;
-    }
+            p {
+                font-size: 13px;
+                line-height: 25px;
+                margin-bottom: 25px;
+            }
         }
     }
 }
-
 
 .openPanel {
     display: block;

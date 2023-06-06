@@ -1,3 +1,5 @@
+import websiteBlogDark from '../assets/icons/websiteblog-dark.png'
+
 const contentSection = [
     {
         main: 'Website Blogs & Articles',
